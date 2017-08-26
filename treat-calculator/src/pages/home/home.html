@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-navbar color="dark">
+    <ion-title>
+      Treat Calculator
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-item>
+      <ion-label floating>Name 1</ion-label>
+      <ion-input [(ngModel)]="user.name1" type="text" value=""></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>Name 2</ion-label>
+      <ion-input [(ngModel)]="user.name2" type="text" value=""></ion-input>
+    </ion-item>
+  </ion-list>
+  <ion-card text-center>
+  <ion-card-header>
+    {{user.name1 || '???'}}  
+    <ion-icon name="pizza" color="danger" class="score"></ion-icon> 
+    {{user.name2 || '???'}} 
+  </ion-card-header>
+  <ion-card-content class="score">
+    {{score}}%
+  </ion-card-content>
+</ion-card>
+  <p> </p>
+  <ion-footer>
+  <ion-toolbar text-center>
+    With this app you can calculate how many chances if your friend will give you treat
+  </ion-toolbar>
+</ion-footer>
+
+</ion-content>
