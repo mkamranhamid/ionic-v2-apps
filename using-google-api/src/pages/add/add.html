@@ -1,0 +1,19 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Add Places</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <form #f="ngForm" (ngSubmit)="onSubmitPlace(f)" novalidate>
+    <ion-item>
+      <ion-label floating>Place Name</ion-label>
+      <ion-input type="text" name="title" value="" ngModel></ion-input>
+    </ion-item>
+
+    <button ion-button color="secondary" full>Add</button>
+  </form>
+</ion-content>
