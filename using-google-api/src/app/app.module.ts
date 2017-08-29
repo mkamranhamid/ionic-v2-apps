@@ -8,9 +8,6 @@ import { IonicStorageModule } from '@ionic/storage';
 import { HttpModule } from '@angular/http';
 import { Http } from '@angular/http';
 
-//google map service
-import { AgmCoreModule } from 'angular2-google-maps/core';
-
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
@@ -30,10 +27,7 @@ import { PlacesService } from '../services/places.service';
     BrowserModule,
     HttpModule,
     IonicModule.forRoot(MyApp),
-    IonicStorageModule.forRoot(),
-    AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyAl6YSRayfWjIASC2pyNB6izhTj2r9RK6k'
-    })
+    IonicStorageModule.forRoot()
 
   ],
   bootstrap: [IonicApp],
