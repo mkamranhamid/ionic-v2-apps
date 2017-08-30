@@ -1,0 +1,18 @@
+page-login {
+    .signupBtn {
+        text-align: center;
+    }
+    ion-content{
+        background-image: url('/assets/background/paris.jpg');
+        background-size: cover;
+    }
+    .transparentInput {
+        background: transparent;
+    }
+    .formBottom {
+        position: absolute;
+        bottom: 0;
+        width: 89%;
+    }
+    
+}
